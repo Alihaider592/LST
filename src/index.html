@@ -1,120 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LST</title>
-<link rel="stylesheet" href="./output.css">
-</head>
-<body class="bg-neutral-100 flex justify-center">
-  <div class="w-full max-w-[1400px]">
-    <section class="flex justify-center items-center text-white rounded ">
-           <div
-  class="flex justify-center gap-2 sm:gap-4 md:gap-6 
-         absolute top-[-180px] sm:top-[-200px] md:top-[-224px] 
-         h-[714px] w-full"
->
-  <span class="bg-red-600 w-[20px] sm:w-[36px] md:w-[52px] h-full rounded-md"></span>
-  <span class="bg-yellow-400 w-[20px] sm:w-[36px] md:w-[52px] h-full rounded-md"></span>
-  <span class="bg-sky-600 w-[20px] sm:w-[36px] md:w-[52px] h-full rounded-md"></span>
-  <span class="bg-green-600 w-[20px] sm:w-[36px] md:w-[52px] h-full rounded-md"></span>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LST</title>
 
-  <!-- navbar -->
-<nav class="absolute top-[19px] left-1/2 -translate-x-1/2 w-[95%] md:w-[90%] lg:w-[1000px] h-[60px] md:h-[68px] lg:h-[72px]  bg-slate-950 rounded-[20px] shadow-[0_20px_20px_rgba(0,0,0,0.1)] flex justify-between items-center px-4 md:px-6 lg:px-2 lg:px-10">
-  <img
-    class="w-[120px] md:w-[150px] lg:w-[195px]"
-    src="/logo.svg"
-    alt="Logo"
-  />
-  <ul
-    class="hidden md:flex text-white 
-           gap-[12px] md:gap-[18px] lg:gap-[20px] xl:gap-[22px] 
-           text-sm md:text-sm md:ml-[2px] lg:text-lg"
-  >
-    <li class="cursor-pointer hover:text-yellow-400 transition">Home</li>
-    <li class="cursor-pointer hover:text-yellow-400 transition">About Us</li>
-    <li class="cursor-pointer hover:text-yellow-400 transition">Community</li>
-    <li class="cursor-pointer hover:text-yellow-400 transition">Team</li>
-  </ul>
-  <ul
-    class="hidden md:flex text-white items-center 
-           gap-[12px] md:gap-[18px] md:text-sm lg:gap-[20px] lg:text-lg"
-  >
-    <li class="cursor-pointer hover:text-yellow-400 transition">Login</li>
+    <!-- ✅ Custom compiled CSS -->
+    <link rel="stylesheet" href="./output.css" />
 
-    <div
-      class="bg-white flex justify-center items-center rounded-3xl 
-             w-[120px] md:w-[115px] lg:w-[154px] 
-             h-[36px] md:h-[40px] lg:h-[46px]"
-    >
-      <li class="text-black font-bold text-sm md:text-xs lg:text-sm">Book A Free Call</li>
-    </div>
-
-    <li class="cursor-pointer hover:text-yellow-400 transition">EN</li>
-  </ul>
-  <button
-    id="menu-btn"
-    class="md:hidden flex flex-col justify-center items-center space-y-1.5"
-  >
-  <img src="/Group 5213.svg" alt="">
-  </button>
-
-  <div
-    id="mobile-menu"
-    class="hidden absolute top-[80px] left-0 w-full bg-slate-950 text-white flex flex-col items-center gap-4 py-6 rounded-[20px] shadow-[0_10px_25px_rgba(0,0,0,0.3)] z-50"
-  >
-    <ul class="flex flex-col gap-4 text-sm md:text-base">
-      <li class="cursor-pointer hover:text-yellow-400 transition">Home</li>
-      <li class="cursor-pointer hover:text-yellow-400 transition">About Us</li>
-      <li class="cursor-pointer hover:text-yellow-400 transition">Community</li>
-      <li class="cursor-pointer hover:text-yellow-400 transition">Team</li>
-      <li class="cursor-pointer hover:text-yellow-400 transition">Login</li>
-      <div
-        class="w-[140px] flex justify-center items-center rounded-3xl h-[40px] bg-white"
-      >
-        <li class="text-black font-bold text-sm">Book A Free Call</li>
-      </div>
-      <li class="cursor-pointer hover:text-yellow-400 transition">EN</li>
-    </ul>
-  </div>
-</nav>
-
-<img
-  src="/Group 1321319781.png"
-  alt="pic"
-  width="134"
-  height="209"
-  class="absolute 
-         top-[100px] w-[50px] xs:w-[50px] sm:top-[100px] md:top-[100px] md:w-[133px] sm:w-[90px] 
-         left-1/2 -translate-x-1/2 lg:w-[132px] xl:w-[130px] 2xl:w-[135px]"
->
-
-
-  <div class="">
-    <img
-      src="/comment(1).svg"
-      alt="Rectangle Shape"
-      class="w-[1216px] h-[432px]"
+    <!-- ✅ Onest font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
-    <p
-      class=""
-    >
-      how are you
-    </p>
-  </div>
 
-  <div class="relative flex justify-center mt-[269px] z-50">
-    <div class="bg-red-200 absolute w-[1216px] h-[432px] rounded-[50px]" >
-      <p
-        class=" inset-0 flex items-center justify-center text-black text-center text-base md:text-lg font-medium px-4"
-      >
-        how are you
-      </p>
+    <!-- ✅ Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { onest: ["Onest", "sans-serif"] },
+            screens: {
+              xs: "375px",
+              ph: "480px",
+              sm: "640px",
+              md: "768px",
+              lg: "1024px",
+              xl: "1280px",
+              dt: "1440px",
+              "2xl": "1536px",
+              "3xl": "1920px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-neutral-100 flex flex-col items-center font-onest">
+    <div class="w-full max-w-[1400px] flex flex-col items-center">
+      <!-- ✅ Main Section -->
+      <section class="relative flex flex-col items-center text-white rounded w-full">
+        <!-- ✅ Grid Bars Background -->
+        <div
+          class="relative flex justify-center w-full top-[-180px] sm:top-[-200px] md:top-[-224px]"
+        >
+          <div class="grid grid-cols-4 gap-6 sm:gap-8 md:gap-10 h-[714px]">
+            <div
+              class="bg-red-600 sm:w-[36px] w-[20px] md:w-[52px] h-[714px] rounded-[100px] outline outline-[52px] outline-offset-[-26px] outline-red-600"
+            ></div>
+            <div
+              class="bg-yellow-400 sm:w-[36px] w-[20px] md:w-[52px] h-[714px] rounded-[100px] outline outline-[52px] outline-offset-[-26px] outline-yellow-400"
+            ></div>
+            <div
+              class="bg-sky-600 sm:w-[36px] w-[20px] md:w-[52px] h-[702px] rounded-[100px] outline outline-[52px] outline-offset-[-26px] outline-sky-600"
+            ></div>
+            <div
+              class="bg-green-600 sm:w-[36px] w-[20px] md:w-[52px] h-[695.5px] rounded-[100px] outline outline-[52px] outline-offset-[-26px] outline-green-600"
+            ></div>
+          </div>
+
+          <!-- ✅ Center Image -->
+          <img
+            src="/Group 1321319781.png"
+            alt="pic"
+            class="absolute top-[320px] w-[60px] sm:w-[80px] md:w-[120px] lg:w-[133px]
+                   left-1/2 -translate-x-1/2"
+          />
+        </div>
+
+        <!-- ✅ Navbar -->
+        <nav
+          class="absolute top-[19px] left-1/2 -translate-x-1/2 w-[95%] md:w-[90%] lg:w-[1000px]
+                 h-[60px] md:h-[68px] lg:h-[72px] bg-slate-950 rounded-[20px]
+                 shadow-[0_20px_20px_rgba(0,0,0,0.1)] flex justify-between items-center
+                 px-4 md:px-6 lg:px-10"
+        >
+          <img class="w-[120px] md:w-[150px] lg:w-[195px]" src="/logo.svg" alt="Logo" />
+          <ul
+            class="hidden md:flex text-white gap-[12px] md:gap-[18px] lg:gap-[20px]
+                     xl:gap-[22px] text-sm lg:text-lg"
+          >
+            <li class="cursor-pointer hover:text-yellow-400 transition">Home</li>
+            <li class="cursor-pointer hover:text-yellow-400 transition">About Us</li>
+            <li class="cursor-pointer hover:text-yellow-400 transition">Community</li>
+            <li class="cursor-pointer hover:text-yellow-400 transition">Team</li>
+          </ul>
+          <ul
+            class="hidden md:flex text-white items-center gap-[12px] md:gap-[18px]
+                     lg:gap-[20px] lg:text-lg"
+          >
+            <li class="cursor-pointer hover:text-yellow-400 transition">Login</li>
+            <div
+              class="bg-white flex justify-center items-center rounded-3xl w-[120px]
+                     md:w-[115px] lg:w-[154px] h-[36px] md:h-[40px] lg:h-[46px]"
+            >
+              <li class="text-black font-bold text-sm md:text-xs lg:text-sm">
+                Book A Free Call
+              </li>
+            </div>
+            <li class="cursor-pointer hover:text-yellow-400 transition">EN</li>
+          </ul>
+          <button
+            id="menu-btn"
+            class="md:hidden flex flex-col justify-center items-center space-y-1.5"
+          >
+            <img src="/Group 5213.svg" alt="Menu" />
+          </button>
+        </nav>
+
+        <!-- ✅ Rectangle Box -->
+        <div
+          class="absolute top-[269px] left-1/2 -translate-x-1/2
+                 w-[90%] sm:w-[600px] md:w-[800px] lg:w-[1000px] xl:w-[1216px]
+                 aspect-[1216/432] rounded-[50px]
+                 flex items-center justify-center overflow-hidden"
+        >
+          <img
+            class="absolute w-full h-full object-cover rounded-[50px]"
+            src="/ractangle.svg"
+            alt="rectangle"
+          />
+          <p
+            class="relative text-black text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium px-4"
+          >
+            Sick of Flipping Coins to Decide?
+          </p>
+        </div>
+      </section>
+
+      <!-- ✅ Final Text -->
+      <div class="mt-20 max-w-[880px] text-center flex items-center justify-center px-4">
+        <p
+          class="font-onest text-[42px] sm:text-[48px] md:text-[60px] lg:text-[72px]
+                 text-[#050D24] leading-[110%] font-semibold"
+        >
+          Take a Ride and Experience Any and All of the Ever-Expanding
+          AI Powered Global Metro Decision Lines​
+        </p>
+      </div>
     </div>
-  </div>
-    </section>
-  </div>
-
-</body>
+  </body>
 </html>
