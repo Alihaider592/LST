@@ -1,155 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LST</title>
 
-    <!-- ✅ Custom compiled CSS -->
-    <link rel="stylesheet" href="./output.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LST</title>
 
-    <!-- ✅ Onest font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- ✅ Custom compiled CSS -->
+  <link rel="stylesheet" href="./output.css" />
 
-    <!-- ✅ Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- ✅ Onest font -->
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: { onest: ["Onest", "sans-serif"] },
-            screens: {
-              xs: "375px",
-              ph: "480px",
-              sm: "640px",
-              md: "768px",
-              lg: "1024px",
-              xl: "1280px",
-              dt: "1440px",
-              "2xl": "1536px",
-              "3xl": "1920px",
-            },
+  <!-- ✅ Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { onest: ["Onest", "sans-serif"] },
+          screens: {
+            xs: "375px",
+            ph: "480px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            dt: "1440px",
+            "2xl": "1536px",
+            "3xl": "1920px",
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
-  <body class="bg-neutral-100 flex flex-col items-center font-onest">
-    <div class="w-full max-w-[1400px] flex flex-col items-center">
-      <!--Main Section -->
-      <section class="relative flex flex-col items-center text-white rounded w-full">
-        <!-- Bars Background -->
-        <div
-          class="relative flex justify-center w-full top-[-180px] sm:top-[-200px] md:top-[-224px]"
-        >
-          <div class="grid grid-cols-4 gap-5 xl:gap-8 xs:gap-3 h-[714px]">
-            <div
-              class="bg-red-600 lg:w-[40px]  sm:w-[20px] w-[20px] md:w-[30px] xs:w-[15px] h-[714px] rounded-[100px] outline outline-red-600"
-            ></div>
-            <div
-              class="bg-yellow-400 lg:w-[40px] sm:w-[20px] md:w-[30px] xs:w-[15px] h-[714px] rounded-[100px] outline  outline-yellow-400"
-            ></div>
-            <div
-              class="bg-sky-600 lg:w-[40px] sm:w-[20px] w-[20px] md:w-[30px] xs:w-[15px] h-[714px] rounded-[100px] outline outline-sky-600"
-            ></div>
-            <div
-              class="bg-green-600 lg:w-[40px] sm:w-[20px] w-[20px] md:w-[30px] xs:w-[15px] h-[714px] rounded-[100px] outline outline-green-600"
-            ></div>
+<body class="bg-neutral-100 flex flex-col items-center font-onest">
+  <div class="w-full max-w-[1400px] flex flex-col items-center">
+    <!--Main Section -->
+    <section class="relative flex flex-col items-center text-white rounded w-full">
+      <!-- Bars Background -->
+      <div class="relative flex justify-center w-full top-[-180px] sm:top-[-200px] md:top-[-224px]">
+        <div class="grid grid-cols-4 gap-5 xl:gap-8 xs:gap-3 h-[714px]">
+          <div
+            class="bg-red-600 lg:w-[40px]  sm:w-[20px] w-[20px] md:w-[30px] xs:w-[15px] h-[714px] rounded-[100px] outline outline-red-600">
           </div>
-
-          <!-- ✅ Center Image -->
-          <img
-            src="/Group 1321319781.png"
-            alt="pic"
-            class="absolute top-[320px] xs:w-[50px] w-[70px] lg:top-[350px] md:top-[380px] xl:w-[120px] sm:w-[59px] md:w-[88px] lg:w-[110px]
-                   left-1/2 -translate-x-1/2"
-          />
+          <div
+            class="bg-yellow-400 lg:w-[40px] sm:w-[20px] md:w-[30px] xs:w-[15px] h-[714px] rounded-[100px] outline  outline-yellow-400">
+          </div>
+          <div
+            class="bg-sky-600 lg:w-[40px] sm:w-[20px] w-[20px] md:w-[30px] xs:w-[15px] h-[714px] rounded-[100px] outline outline-sky-600">
+          </div>
+          <div
+            class="bg-green-600 lg:w-[40px] sm:w-[20px] w-[20px] md:w-[30px] xs:w-[15px] h-[714px] rounded-[100px] outline outline-green-600">
+          </div>
         </div>
 
-        <!-- Navbar -->
-        <nav
-          class="absolute top-[19px] left-1/2 -translate-x-1/2 w-[95%] md:w-[90%] lg:w-[1000px]
+        <!-- ✅ Center Image -->
+        <img src="/Group 1321319781.png" alt="pic" class="absolute top-[320px] xs:w-[50px] w-[70px] lg:top-[350px] md:top-[380px] xl:w-[120px] sm:w-[59px] md:w-[88px] lg:w-[110px]
+                   left-1/2 -translate-x-1/2" />
+      </div>
+
+      <!-- Navbar -->
+      <nav class="absolute top-[19px] left-1/2 -translate-x-1/2 w-[95%] md:w-[90%] lg:w-[1000px]
                  h-[60px] md:h-[68px] lg:h-[72px] bg-slate-950 rounded-[20px]
                  shadow-[0_20px_20px_rgba(0,0,0,0.1)] flex justify-between items-center
-                 px-4 md:px-6 lg:px-10"
-        >
-          <img class="w-[120px] md:w-[150px] lg:w-[195px]" src="/logo.svg" alt="Logo" />
-          <ul
-            class="hidden md:flex text-white gap-[12px] md:gap-[18px] lg:gap-[20px]
-                     xl:gap-[22px] text-sm lg:text-lg"
-          >
-            <li class="cursor-pointer hover:text-yellow-400 transition">Home</li>
-            <li class="cursor-pointer hover:text-yellow-400 transition">About Us</li>
-            <li class="cursor-pointer hover:text-yellow-400 transition">Community</li>
-            <li class="cursor-pointer hover:text-yellow-400 transition">Team</li>
-          </ul>
-          <ul
-            class="hidden md:flex text-white items-center gap-[12px] md:gap-[18px]
-                     lg:gap-[20px] lg:text-lg"
-          >
-            <li class="cursor-pointer hover:text-yellow-400 transition">Login</li>
-            <div
-              class="bg-white flex justify-center items-center rounded-3xl w-[120px]
-                     md:w-[115px] lg:w-[154px] h-[36px] md:h-[40px] lg:h-[46px]"
-            >
-              <li class="text-black font-bold text-sm md:text-xs lg:text-sm">
-                Book A Free Call
-              </li>
-            </div>
-            <li class="cursor-pointer hover:text-yellow-400 transition">EN</li>
-          </ul>
-          <button
-            id="menu-btn"
-            class="md:hidden flex flex-col justify-center items-center space-y-1.5"
-          >
-            <img src="/Group 5213.svg" alt="Menu" />
-          </button>
-        </nav>
+                 px-4 md:px-6 lg:px-10">
+        <img class="w-[120px] md:w-[150px] lg:w-[195px]" src="/logo.svg" alt="Logo" />
+        <ul class="hidden md:flex text-white gap-[12px] md:gap-[18px] lg:gap-[20px]
+                     xl:gap-[22px] text-sm lg:text-lg">
+          <li class="cursor-pointer hover:text-yellow-400 transition">Home</li>
+          <li class="cursor-pointer hover:text-yellow-400 transition">About Us</li>
+          <li class="cursor-pointer hover:text-yellow-400 transition">Community</li>
+          <li class="cursor-pointer hover:text-yellow-400 transition">Team</li>
+        </ul>
+        <ul class="hidden md:flex text-white items-center gap-[12px] md:gap-[18px]
+                     lg:gap-[20px] lg:text-lg">
+          <li class="cursor-pointer hover:text-yellow-400 transition">Login</li>
+          <div class="bg-white flex justify-center items-center rounded-3xl w-[120px]
+                     md:w-[115px] lg:w-[154px] h-[36px] md:h-[40px] lg:h-[46px]">
+            <li class="text-black font-bold text-sm md:text-xs lg:text-sm">
+              Book A Free Call
+            </li>
+          </div>
+          <li class="cursor-pointer hover:text-yellow-400 transition">EN</li>
+        </ul>
+        <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center space-y-1.5">
+          <img src="/Group 5213.svg" alt="Menu" />
+        </button>
+      </nav>
 
-        <!-- Rectangle Box -->
-        <div
-          class="absolute top-[269px] left-1/2 -translate-x-1/2
+      <!-- Rectangle Box -->
+      <div class="absolute top-[269px] left-1/2 -translate-x-1/2
                  w-[90%] sm:w-[600px] md:w-[800px] lg:w-[1000px] xl:w-[1216px]
                  aspect-[1216/432] rounded-[50px]
-                 flex items-center justify-center overflow-hidden"
-        >
-          <img
-            class="absolute w-full h-full object-cover rounded-[50px]"
-            src="/ractangle.svg"
-            alt="rectangle"
-          />
-            <div class="relative flex flex-col justify-center items-center gap-5">
-            </p>
-            <p class="w-[566px] text-center justify-start text-slate-950 text-6xl font-normal font-['Onest'] leading-[64px]">Sick of Flipping Coins to Decide?</p>
-            <p class="text-center justify-start text-slate-600 text-base font-normal font-['Onest'] leading-6">To decide on anything from love to your career path, count on Simon.</p>
+                 flex items-center justify-center overflow-hidden">
+        <img class="absolute w-full h-full object-cover rounded-[50px]" src="/ractangle.svg" alt="rectangle" />
+        <div class="relative flex flex-col justify-center items-center gap-5">
+          </p>
+          <p
+            class="w-[566px] text-center justify-start text-slate-950 text-6xl font-normal font-['Onest'] leading-[64px]">
+            Sick of Flipping Coins to Decide?</p>
+          <p class="text-center justify-start text-slate-600 text-base font-normal font-['Onest'] leading-6">To decide
+            on anything from love to your career path, count on Simon.</p>
           <div class="w-60 h-12 p-2.5 bg-slate-950 rounded-[50px] inline-flex justify-center items-center gap-2.5">
-  <div class="text-center justify-start text-white text-base font-bold font-['Onest'] leading-6">Create free profile</div>
-</div>
+            <div class="text-center justify-start text-white text-base font-bold font-['Onest'] leading-6">Create free
+              profile</div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Text -->
+    <p class="w-[880px] text-center text-slate-950 text-5xl m-5 font-normal font-['Onest'] leading-[1]">
+      Take a Ride and Experience Any and All of the Ever-Expanding AI Powered Global Metro Decision Lines​
+    </p>
+    <!-- Destination  -->
+    <section class="flex justify-center items-center">
+      <img class="w-[623px] h-[482px]" src="/destination.png" alt="">
+      <img class="w-[680px] h-[283.27px] " src="/arrow.svg" alt="">
+    </section>
+    <!-- matro card -->
+    <section class="flex gap-6 m-10">
+      <div class="w-[800px] h-[535px] bg-slate-300  rounded-[20px]">
+        <div class="w-[800px] justify-center items-center flex h-20 bg-sky-950 rounded-tl-[20px] rounded-tr-[20px]">
+          <img src="/logo.svg" alt="">
+        </div>
+        <p class="w-[800px] h-28 bg-slate-950/5">Metro Card</p>
+        <div class="w-[512px] h-14 relative">
+          <div
+            class="w-0 h-[484px] left-0 top-[28px] absolute origin-top-left -rotate-90 rounded-[100px] outline outline-[20px] outline-offset-[-10px] outline-green-600">
           </div>
-      </section>
-
-      <!-- Text -->
-<p class="w-[880px] text-center text-slate-950 text-5xl font-normal font-['Onest'] leading-[1]">
-  Take a Ride and Experience Any and All of the Ever-Expanding AI Powered Global Metro Decision Lines​
-</p>
-<!-- Destination  -->
-<section>
-<div class="w-[623px] h-[482px] justify-center items-center bg-slate-950 rounded-[20px] p-4 mb-3">
-  <img src="/logo.svg" alt="">
-  <div>
-    <p class="w-24 m-2 justify-start text-neutral-100 text-xs font-normal font-['Onest'] leading-3">Truck Number</p>
+          <div class="w-9 h-14 left-[477px] top-0 absolute bg-green-600"></div>
+        </div>
+      </div>
+      <!-- atm -->
+      <div>
+        <img class="w-[379px] h-[438px]" src="/atm.png" alt="">
+        <div, class="flex">
+          <div class="w-[270px] justify-start mt-3 text-slate-950 text-2xl font-medium font-['Onest'] leading-7">Press
+            here to begin your ride to a <p class="justify-start text-slate-950 text-2xl font-medium font-['Onest']">
+              SMART DECISION NOW </p>
+          </div>
+          <img class="w-40 h-40 bottom-10 relative" src="/btn.png" alt="">
+      </div>
   </div>
-  <div class="w-[590px] h-96 rounded-[10px] border border-white/20">
-
-  </div>
-</div>
-</section>
+  </section>
+  <!-- states -->
+  <div class="w-[1216px] h-24 bg-yellow-400 flex justify-between items-center rounded-[100px]">
+    <!-- State 1 -->
+    <div class="w-96 h-24 bg-red-600 gap-2 rounded-l-[100px] justify-center items-center flex">
+      <p class="w-10 h-10 bg-white border-4 flex justify-center items-center border-slate-950 font-bold rounded-full">1
+      </p>
+      <p class="justify-start text-white text-3xl font-medium font-['Onest'] leading-8">State your dilemma</p>
     </div>
-  </body>
+    <!-- State 2 -->
+    <div class="flex items-center gap-2">
+      <p class="w-10 h-10 bg-white border-4 flex justify-center items-center border-slate-950 rounded-full font-bold">2
+      </p>
+      <p class="justify-start text-white text-3xl font-medium font-['Onest'] leading-8">Let Simon Help</p>
+    </div>
+    <!-- state 3 -->
+    <div class="w-96 h-24 bg-sky-600 rounded-r-[100px] justify-center flex items-center gap-2">
+      <p class="w-10 h-10 bg-white border-4 flex justify-center items-center border-slate-950 rounded-full font-bold">3
+      </p>
+      <p class="justify-start text-white text-3xl font-medium font-['Onest'] leading-8">Get your answer</p>
+    </div>
+  </div>
+
+  </div>
+</body>
+
 </html>
