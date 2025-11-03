@@ -136,41 +136,134 @@
     </section>
     <!-- matro card -->
     <section class="flex gap-6 m-10">
-      <div class="w-[800px] h-[535px] bg-slate-300  rounded-[20px]">
+      <div class="w-[800px] h-[560px] bg-slate-300  rounded-[20px]">
         <div class="w-[800px] justify-center items-center flex h-20 bg-sky-950 rounded-tl-[20px] rounded-tr-[20px]">
           <img src="/logo.svg" alt="">
         </div>
-<div class="w-[800px] h-28 bg-slate-950/5">
+<div class="w-[800px] absolute h-28 bg-slate-950/5">
   <img src="/Metro Card.svg" alt="">
 </div>
-        <div class="relative flex h-[55px] w-[512px] justify-between items-center">
-  <!-- ✅ Green Bar Behind -->
-  <img
-    class="absolute left-0 top-1/2 -translate-y-1/2 w-[calc(100%-35px)] rounded-l-full z-0"
-    src="/scale bar.svg"
-    alt="bar"
-  />
-  <img
-    class="absolute right-0 top-1/2 -translate-y-1/2 w-[35px] z-0"
-    src="/triangle.svg"
-    alt="triangle"
-  />
-
-  <!-- ✅ Circles -->
-  <div class="w-8 h-8 ml-[-8px] z-10 bg-white border-4 border-slate-950 rounded-full flex justify-center items-center font-bold">?</div>
-  <div class="w-[15px] h-[15px] z-10 bg-white border-4 border-slate-950 rounded-full"></div>
-  <div class="w-[15px] h-[15px] z-10 bg-white border-4 border-slate-950 rounded-full"></div>
-  <div class="w-[15px] h-[15px] z-10 bg-white border-4 border-slate-950 rounded-full"></div>
-  <div class="w-[15px] h-[15px] z-10 bg-white border-4 border-slate-950 rounded-full"></div>
-  <div class="w-[15px] h-[15px] z-10 bg-white border-4 border-slate-950 rounded-full"></div>
-  <div class="w-[15px] h-[15px] z-10 bg-white border-4 border-slate-950 rounded-full"></div>
-  <div class="w-[15px] h-[15px] z-10 bg-white border-4 border-slate-950 rounded-full"></div>
-  <div class="w-[15px] h-[15px] z-10 bg-white border-4 border-slate-950 rounded-full mr-[25px]"></div>
-</div>
+        
+<div class="w-[662px] left-20 h-28 relative">
+  <!-- ✅ Arrow bar using SVG -->
+  <div class="absolute left-[39px] top-[53px] flex items-center">
+    <div class="relative flex h-[40px] w-[512px] justify-between items-center">
+      <img
+        class="absolute left-0 top-1/2 -translate-y-1/2 w-[calc(100%-32px)] rounded-l-full z-0"
+        src="/scale bar.svg"
+        alt="bar"
+      />
+      <img
+        class="absolute right-0 top-1/2 -translate-y-1/2 w-[35px] -ml-[3px] z-0"
+        src="/triangle.svg"
+        alt="triangle"
+      />
+    </div>
+  </div>
 
 
+  <!-- ✅ Circles (centered on bar) -->
+   <div class="relative top-[3px]">
+     <div class="absolute w-3.5 h-3.5 left-[99px] top-[63px] bg-white border-[1.5px] border-slate-950 rounded-full z-10"></div>
+     <div class="absolute w-3.5 h-3.5 left-[158px] top-[63px] bg-white border-[1.5px] border-slate-950 rounded-full z-10"></div>
+     <div class="absolute w-3.5 h-3.5 left-[217px] top-[63px] bg-white border-[1.5px] border-slate-950 rounded-full z-10"></div>
+     <div class="absolute w-3.5 h-3.5 left-[276px] top-[63px] bg-white border-[1.5px] border-slate-950 rounded-full z-10"></div>
+     <div class="absolute w-3.5 h-3.5 left-[335px] top-[63px] bg-white border-[1.5px] border-slate-950 rounded-full z-10"></div>
+     <div class="absolute w-3.5 h-3.5 left-[394px] top-[63px] bg-white border-[1.5px] border-slate-950 rounded-full z-10"></div>
+     <div class="absolute w-3.5 h-3.5 left-[453px] top-[63px] bg-white border-[1.5px] border-slate-950 rounded-full z-10"></div>
+     <div class="absolute w-3.5 h-3.5 left-[512px] top-[63px] bg-white border-[1.5px] border-slate-950 rounded-full z-10"></div>
+    </div>
+  <!-- ✅ Vertical lines (adjusted to new circle centers) -->
+  <!-- Lines up -->
+   <div class="relative bottom-[4px]">
+     <div class="absolute left-[106px] top-[49px] w-[1px] h-[14px] bg-black "></div>
+     <div class="absolute left-[224px] top-[49px] w-[1px] h-[14px] bg-black"></div>
+     <div class="absolute left-[341px] top-[49px] w-[1px] h-[14px] bg-black"></div>
+     <div class="absolute left-[460px] top-[49px] w-[1px] h-[14px] bg-black"></div>
+    </div>
+
+  <!-- Lines down -->
+   <div class="relative top-[19px]">
+     <div class="absolute left-[39px] top-[67px] w-[1px] h-[14px] bg-black"></div>
+     <div class="absolute left-[165px] top-[67px] w-[1px] h-[14px] bg-black"></div>
+     <div class="absolute left-[283px] top-[67px] w-[1px] h-[14px] bg-black"></div>
+     <div class="absolute left-[402px] top-[67px] w-[1px] h-[14px] bg-black"></div>
+    </div>
+
+  <!-- ✅ Text Labels (Top Row) -->
+   <div class="relative top-5">
+     <div class="absolute left-[68px] top-0 bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200">
+       <div class="text-[6px] text-neutral-950 font-['Onest'] leading-[7px]">CLARIFY Station</div>
       </div>
-      <!-- atm -->
+      <div class="absolute left-[181px] top-0 bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200">
+        <div class="text-[6px] text-neutral-950 font-['Onest'] leading-[7px] text-center">ALTERNATIVES Station</div>
+      </div>
+      <div class="absolute left-[307px] top-0 bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200">
+        <div class="text-[6px] text-neutral-950 font-['Onest'] leading-[7px]">PRIORITIZE Station</div>
+      </div>
+      <div class="absolute left-[422px] top-0 bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200">
+        <div class="text-[6px] text-neutral-950 font-['Onest'] leading-[7px]">REVIEW & REFLECT Station</div>
+      </div>
+    </div>
+
+  <!-- ✅ Text Labels (Bottom Row) -->
+   <div class="relative top-7">
+     <div class="absolute left-0 top-[83px] bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200">
+       <div class="text-[6px] text-neutral-950 font-['Onest'] leading-[7px]">INDECISION Station</div>
+      </div>
+      <div class="absolute left-[121px] top-[83px] bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200">
+        <div class="text-[6px] text-neutral-950 font-['Onest'] leading-[7px]">TOOL Station</div>
+      </div>
+      <div class="absolute left-[246px] top-[83px] bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200">
+        <div class="text-[6px] text-neutral-950 font-['Onest'] leading-[7px]">FACTORS Station</div>
+      </div>
+      <div class="absolute left-[365px] top-[83px] bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200">
+        <div class="text-[6px] text-neutral-950 font-['Onest'] leading-[7px]">ASSESS Station</div>
+      </div>
+      <div class="absolute left-[477px] top-[83px] bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200">
+        <div class="text-[6px] text-neutral-950 font-['Onest'] leading-[7px]">GO FORWARD Station</div>
+      </div>
+  </div>
+
+  <!-- ✅ End Label -->
+  <div class="absolute left-[565px] top-[60px] bg-white rounded px-3 py-1 outline outline-[0.4px] outline-neutral-200 w-[120px] flex justify-center items-center">
+    <div class="text-center text-[6px] text-neutral-950 font-['Onest'] leading-[7px]">
+      TRANSFER to EXECUTION or ACTION PLANNING Line
+    </div>
+  </div>
+
+  <!-- ✅ Start Icon -->
+  <div class="w-8 h-8 left-[22px] top-[53px] rounded-full absolute bg-white border-[3px] border-slate-950 flex justify-center items-center z-10">
+    <div class="text-slate-950 text-[10px] font-bold">?</div>
+  </div>
+</div>
+<div class="w-[550px] mt-9 relative left-36 text-slate-950 text-base font-normal font-['Onest'] leading-4">
+  <div class="leading-[-1px]">
+  <div class="flex gap-2">
+<img src="/Vector.svg" alt="">
+    DecisionMetro Helps People Everyday Go From Points of Indecision to Ones Made and Executed!<br/>
+  </div>
+  <div class="flex gap-2">
+    <img src="/Vector(1).svg" alt="">
+    <br/>DecisionMetro Leverages Proven Decision Practices That Incorporates Access to Expertise from PEOPLE, PROCESS and Leading Edge AI And Social Media TECHNOLOGIES.<br/>
+  </div>
+  <div class="flex gap-2">
+    <img src="/Vector(2).svg" alt="">
+    <br/>Many, If Not All, Critical Life Decisions Have Potential Current and Future Financial, Emotional, Social, Relationship, Health, Reputation and Opportunity Impacts.<br/>
+  </div>
+  <div class="flex gap-2">
+    <img src="/Vector(3).svg" alt="">
+    <br/>DecisionMetro’s Mission Is To Reduce The Risks And Maximize The Returns Of These Impacts.<br/>
+  </div>
+  <div class="flex gap-2">
+    <img src="/Vector(4).svg" alt="">
+    <br/>Let Simon Help You Make The Right Decisions—Your Future Is Worth It.</div>
+  </div>
+  </div>
+<!-- atm -->
+</div>
+<div>  
+</div>
       <div>
         <img class="w-[379px] h-[438px]" src="/atm.png" alt="">
         <div, class="flex">
